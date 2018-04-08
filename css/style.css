@@ -1,0 +1,583 @@
+
+/* Start Main Rulez*/
+body
+{
+height: 3000px;
+  }
+.container
+{
+  width:1200px;
+  margin: auto;
+}
+.clear{clear: both;}
+/* End Main Rulez*/
+
+
+/*Start header*/
+
+
+.header .navbar
+{
+  background-color:#FFF;
+  overflow: hidden;
+  border: none;
+  
+  
+  }
+.header .navbar h2
+{
+    float: left;
+    color: #2C95D9;
+    margin: 20px;
+    font-size:35px ;
+}
+
+.header .navbar ul
+{
+  list-style:none;
+  padding-left:0px;
+  overflow: hidden;
+  float:right;
+  
+
+}
+.header .navbar ul li{
+  float: left;
+  padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .header .navbar ul li a
+  {
+    color:#2C95D9;
+    text-decoration: none;
+
+  }
+    .header .navbar ul li.active a,
+    .header .navbar ul li a:hover
+ {   
+    color: #fff;
+    background-color: #2C95D9;
+    border-radius: 10px; 
+     border: 10px solid #2C95D9;
+     
+}
+.header .slide
+{
+  background-image:url('../image/l.jpg');
+  -webkit-background-size: cover; /*css3*/
+  -moz-background-size: cover; /*css3*/
+  -o-background-size: cover; /*css3*/
+  background-size: cover;
+  height:825px
+  
+}
+.header .slide .intro
+{
+padding-top:100px;
+text-align: center;
+color:#FFF;
+}
+.header .slide .intro h2
+{
+  margin: 0 auto;
+  font-size: 50px;
+  width: 500px;
+  border-top: 5px solid #FFF;
+  border-bottom: 5px solid #FFF;
+  padding: 5px 0 ;
+  
+  
+}
+
+
+
+/* End header*/
+
+/*Start about-me*/
+.about
+{
+    background-color: #FFF;
+    overflow: hidden;
+    padding-top:60px;
+    padding-bottom: 20px;
+}
+.about h2
+{
+    font-size:50px;
+    border-bottom:5px solid #2C95D9 ;
+    padding: 10px 0;
+    width: 218px;
+    margin: auto;
+
+}
+.about p
+{
+    font-size: 20px;
+    line-height: 2;
+    width: 1000px;
+    padding: 10px;
+    margin-top: 60px
+    
+        
+    
+}
+.about .image 
+{
+      float: left;
+      width:380px ;
+}
+.about .image img
+{
+    border-radius: 50%;
+    
+    
+}
+
+.about .info
+{
+  float: left;
+  width: 500px;
+  
+}
+.about .info .
+span
+{
+    color:#2C95D9;
+    font-weight: bold
+}
+
+.about .info-more
+{
+    font-size: 25px;
+    margin-top: 100px;
+    line-height: 2;
+    font-weight: bold;
+    padding: 10px;
+    
+}
+.about .info-more span
+{
+    font-size: 20px;
+    font-weight: normal;
+}
+
+
+/*End about-me*/
+
+/*Start Education*/
+.education
+{
+  background-color: #F1F1F1;
+  overflow: hidden;
+  text-align: center;
+    padding-top:60px;
+    padding-bottom: 20px;
+
+}
+.education .edu 
+{
+            font-size:50px;
+    border-bottom:5px solid #2C95D9 ;
+    padding: 10px 0;
+    width: 218px;
+    margin: auto;
+
+
+}
+.headline
+{
+  color: #00F;
+}
+      /* TIMELINE*/
+
+.timeline ul {
+  color:#FFF;
+
+}
+
+.timeline ul li { /*التحكم في السكرول اللي عليه دائره  الفاصل بين المربعات*/
+  list-style-type: none;
+  position: relative;
+  width: 6px;
+  margin: 0 auto;
+  padding-top: 50px;
+  background: #2C95D9;
+}
+
+.timeline ul li::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: inherit;
+}
+
+.timeline ul li div { /*التخكم في المربع*/
+  position: relative;
+  bottom: 0;
+  width: 400px;
+  padding: 15px;
+  background: #000;
+  border: 3px solid #2C95D9;
+}
+
+.timeline ul li div::before {/*التحكم في طول وارتفاع السهم البارز من المربع*/
+  content: '';
+  position: absolute;
+  bottom: 7px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.timeline ul li:nth-child(odd) div {/*المربع اللي علي اليمين*/
+  left: 40px;
+}
+
+.timeline ul li:nth-child(odd) div::before { /*السهم البارز من المربع اليمين*/
+  left: -15px;
+  border-width: 8px 16px 8px 0;
+  border-color: transparent #000 transparent transparent;
+}
+
+.timeline ul li:nth-child(even) div { /*المربع اللي ع الشمال*/
+  left: -465px;
+}
+
+.timeline ul li:nth-child(even) div::before {   /*السهم البارز من المربع الشمال*/
+  right: -15px;
+  border-width: 8px 0 8px 16px;
+  border-color: transparent transparent transparent #000;
+}
+
+time {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+
+
+/*End Education*/
+
+/*Start Skills*/
+.skills
+{
+  background-color:#FFF;
+  overflow: hidden;
+    padding-top:60px;
+    padding-bottom: 20px;
+
+}
+.skills h2
+{
+    font-size:50px;
+    border-bottom:5px solid #2C95D9 ;
+    padding: 10px 0;
+    width: 115px;
+    margin: auto;
+}
+.skills .progress
+{
+    width: 100%;
+    float: left;
+    
+}
+
+.ss
+{
+    width: 45%;
+    display: inline-block;
+    margin-right: 40px;
+
+}
+
+.level
+{
+    background-color: #F2F2F2;
+    height: 20px;
+
+}
+.skills .progress  div span
+{
+    height:20px;
+    display: block;
+    line-height: 25px;
+    text-align: right;
+}
+
+
+/*End Skills--*/
+/*Start Experience*/
+.experience
+{
+  background-color:#F1F1F1;
+  overflow: hidden;
+    padding-top:60px;
+    padding-bottom: 20px;
+    text-align: center;
+    line-height: 2;
+    
+
+}
+.experience h2
+{
+        font-size:50px;
+    border-bottom:5px solid #2C95D9 ;
+    padding: 10px 0;
+    width: 255px;
+    margin: auto;
+
+}
+
+/*End Experience*/
+
+/*Start Works*/
+.works
+{
+        text-align: center;
+        overflow: hidden;
+        padding-top:60px;
+        padding-bottom: 20px;
+
+}
+.works h2
+{
+    font-size:50px;
+    border-bottom:5px solid #2C95D9 ;
+    padding: 10px 0;
+    width: 140px;
+    margin: auto;
+
+}
+.works button
+{
+    font-size: 20px;
+    background-color:#2C95D9;
+    color: #FFF;
+    margin-top: 30px;
+    width: 150px;
+    height: 40px;
+    border: 2px solid #D1D1D1;
+    
+        
+}
+.works button:hover
+{
+    font-size: 20px;
+    background-color:#FFF;
+    color: #333;
+    margin-top: 30px;
+    width: 150px;
+    height: 40px;
+    border: 2px solid #D1D1D1;
+        
+}
+
+.works .my_work
+{
+  overflow: hidden;
+}
+.works .my_work > div
+{
+  float: left;
+  width:400px;
+  margin-bottom: 10px;
+}
+.works .my_work > div img
+{
+  width:350px;
+  height: 350px;
+  margin: 10px;
+  box-shadow: 0 5px 15px #333;
+    margin-top: 50px;
+    margin-bottom: 20px
+}
+
+/*End Works*/
+
+/*Start Contact*/
+.Contact
+{
+  background-color:#F1F1F1;
+    overflow: hidden;
+    padding-top: 10px;
+    padding-bottom: 70px;
+}
+.Contact h2
+{
+    font-size:50px;
+    border-bottom:5px solid #2C95D9 ;
+    padding: 10px 0;
+    width: 255px;
+    margin: auto;
+}
+.Contact .info
+{
+        width: 50%;
+        float: left;
+
+}
+.Contact .info .left-contact
+{
+    border: 2px solid #e1e1e1;
+    padding: 20px;
+    margin-top: 20px;
+    margin-left: 40px;
+    width: 500px;
+    height: 450px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 20px #D2D2D2;
+
+        
+}
+.Contact .info .left-contact h3
+{
+        margin: 20px;
+        color: #757575;
+
+
+}
+.Contact .info .left-contact h3 p
+{
+        color: #D2D2D2;
+
+}
+
+.Contact .info .left-contact a
+{
+        color: #D2D2D2;
+
+}
+
+
+.Contact .info .left-contact i
+{
+    margin: 10px;
+    display: inline-block;
+    color: #646464;
+    border-radius: 50%;
+    background-color: #FFF;
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    border: 2px solid #D1D1D1;
+    margin: auto;
+}
+
+.Contact .form
+{
+  width: 50%;
+  float: left;
+  overflow: hidden;
+    
+}
+.Contact .form .right-contact
+{
+    border: 2px solid #e1e1e1;
+    padding: 20px;
+    margin-top: 20px;
+    margin-left: 40px;
+    width: 500px;
+    height: 450px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 20px #D2D2D2;
+
+
+    
+}
+.Contact .form .right-contact label
+{
+    display: block;
+    color: #333;
+    margin: 10px;
+}
+.Contact .form .right-contact input[type="text"]
+
+{
+    background-color:#FFF;
+    color:#333;
+    width: 400px;
+    border: 2px solid #e1e1e1;
+    padding: 10px;
+    margin-bottom: 15px;
+    
+}
+.Contact .form .right-contact textarea
+{
+        background-color:#FFF;
+    color:#333;
+    width: 400px;
+    border: 2px solid #e1e1e1;
+    padding: 10px;
+    margin-bottom: 15px;
+    height:120px
+
+}
+.Contact .form .right-contact input[type="submit"]
+{
+    background-color: #333;
+    color: #FFF;
+    border: 2px solid #D3D3D3;
+    font-size: 20px;
+    padding: 10px;
+    box-shadow:0 0 5px #333;
+    
+}
+.Contact .form .right-contact input[type="submit"]:hover
+{
+    background-color: #D1D1D1;
+    color: #2C95D9;
+    border: 2px solid #D2D2D2;
+    font-size: 20px;
+    padding: 10px;
+    box-shadow:0 0 5px #00F;
+
+    
+}
+
+/*End Contact*/
+
+/*Start Footer*/
+.footer
+{
+  background-color: #D1D1D1;
+ overflow: hidden;
+  color: #333;
+    padding: 30px 0 20px 0;
+    margin: auto;
+    text-align: center
+}
+.footer span
+{
+    font-size: 25px;
+    font-weight: bold;
+    float: left;
+    margin: 20px
+        
+}
+.footer ul 
+{
+    list-style: none;
+    padding: 0;
+    margin: auto;
+    float: right
+}
+.footer ul li
+{
+    display: inline-block;
+}
+.footer ul li i:hover
+{
+    color: #2C95D9
+}
+
+
+/*End Footer*/
